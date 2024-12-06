@@ -1,6 +1,9 @@
 # Term-Project-15-112
 Project Description:
 
+The project will be presented in the shape of a fully functional 3-D raycasted maze using the CMU’s 2-D graphics engine (CMU Graphics). The maze itself will be casted before the player who will be playing from the first person point of view as if they were inside the physical maze itself. The player will be provided a menu screen with a sequence of rules that include the following in summation: they must survive the maze by avoiding losing their initial 1000 HP to the oncoming autonomously moving enemies and oscillating walls throughout the maze while also trying defeat a minimum of 20 enemies in which they can then scour for the false wall/portal within the maze to escape. The longer that the player remains within the maze, the larger the difficulty (such that every 15s there will be a wave in which the number of enemies are increased, the hit damage and radius increases, and the overall speed of the walls and enemies increases as well). In order to defeat the enemies, the player can utilize the drawing feature to draw the prompted shape on the actual enemies within a certain margin of error and they can also weave through the walls. 
+
+The maze itself is created using a DFS algorithm that I designed which randomizes every time but still makes it a solvable maze which means that the user cannot memorize the path. Likewise, the enemies are equipped with pathfinding so no matter where a player runs, the enemies will follow and they will get increasingly faster as the time goes on. The moving walls will likewise increase in speed, and the flashing light animations make it harder to see as the game goes on so it is better to beat the game earlier on. The ray casting was made using the DDA algorithm, the pathfinding, was inspired by a more primitive version of A*, and the pattern detection was done using Dynamic Time Warping Detection.
 
 
 Run Instructions:
